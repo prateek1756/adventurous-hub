@@ -30,7 +30,7 @@ const Accommodation: React.FC = () => {
     capacity: 2,
     size: "600 sq ft",
     bedType: "1 King",
-    image: "/lovable-uploads/6b9bf7ef-20c4-4fa9-9f1a-2cd3310bf013.png",
+    image: "/img-upload/6b9bf7ef-20c4-4fa9-9f1a-2cd3310bf013.png",
     views: "River View",
     amenities: [{
       icon: <Wifi size={16} />,
@@ -56,7 +56,7 @@ const Accommodation: React.FC = () => {
     capacity: 2,
     size: "550 sq ft",
     bedType: "1 King",
-    image: "/lovable-uploads/6b9bf7ef-20c4-4fa9-9f1a-2cd3310bf013.png",
+    image: "/img-upload/6b9bf7ef-20c4-4fa9-9f1a-2cd3310bf013.png",
     views: "River",
     amenities: [{
       icon: <Wifi size={16} />,
@@ -82,7 +82,7 @@ const Accommodation: React.FC = () => {
     capacity: 2,
     size: "400 sq ft",
     bedType: "1 Queen",
-    image: "/lovable-uploads/a9ae304d-ac8b-4671-94c1-c3a3013a0711.png",
+    image: "/img-upload/a9ae304d-ac8b-4671-94c1-c3a3013a0711.png",
     views: "Forest Canopy",
     amenities: [{
       icon: <Wifi size={16} />,
@@ -131,7 +131,7 @@ const Accommodation: React.FC = () => {
     capacity: 2,
     size: "400 sq ft",
     bedType: "1 King",
-    image: "/lovable-uploads/7185274f-a6c4-4980-b354-5641039bc323.png",
+    image: "/img-upload/7185274f-a6c4-4980-b354-5641039bc323.png",
     views: "Grassland",
     amenities: [{
       icon: <Wifi size={16} />,
@@ -185,7 +185,7 @@ const Accommodation: React.FC = () => {
       <Navbar />
       
       <div className="relative h-[40vh] md:h-[50vh] w-full mt-20">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/61d7b6e2-720c-42fc-a459-7624b56b81d0.png')" }}>
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/img-upload/61d7b6e2-720c-42fc-a459-7624b56b81d0.png')" }}>
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="container relative h-full flex flex-col justify-center items-center text-center text-white z-10 px-4">

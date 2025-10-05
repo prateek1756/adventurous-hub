@@ -97,7 +97,7 @@ const BookingPage = () => {
       <main className="flex-grow">
         <div className="relative h-[40vh] md:h-[50vh] w-full">
           <div className="absolute inset-0 bg-cover bg-center" style={{
-          backgroundImage: "url('/lovable-uploads/7fb9e3c6-353a-410e-8478-5741bfe3ab03.png')",
+          backgroundImage: "url('/img-upload/7fb9e3c6-353a-410e-8478-5741bfe3ab03.png')",
           backgroundPosition: "center 30%"
         }}>
             <div className="absolute inset-0 bg-black/50" />

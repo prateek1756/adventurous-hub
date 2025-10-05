@@ -51,28 +51,28 @@ const FeaturedActivities: React.FC = () => {
       id: 1,
       title: "River Rafting",
       description: "Navigate the thrilling rapids of the Kali River with our expert guides.",
-      image: "/lovable-uploads/039f35db-5cf1-4a0b-be13-c4f3947bec67.png",
+      image: "/img-upload/039f35db-5cf1-4a0b-be13-c4f3947bec67.png",
       link: "/activities#river-rafting"
     },
     {
       id: 2,
       title: "Wildlife Safari",
       description: "Explore the rich biodiversity of Dandeli Wildlife Sanctuary.",
-      image: "/lovable-uploads/003350e1-bba1-4aed-9001-4acf317067fb.png",
+      image: "/img-upload/003350e1-bba1-4aed-9001-4acf317067fb.png",
       link: "/activities#wildlife-safari"
     },
     {
       id: 3,
       title: "Jungle Trekking",
       description: "Embark on guided treks through pristine forest trails.",
-      image: "/lovable-uploads/968e9c7f-6872-4c43-ad59-1dd92c92d29a.png",
+      image: "/img-upload/968e9c7f-6872-4c43-ad59-1dd92c92d29a.png",
       link: "/activities#jungle-trekking"
     },
     {
       id: 4,
       title: "Kayaking",
       description: "Paddle through serene waters and enjoy the peaceful surroundings.",
-      image: "/lovable-uploads/006b887f-fc3b-427b-9885-91e44bb4dbee.png",
+      image: "/img-upload/006b887f-fc3b-427b-9885-91e44bb4dbee.png",
       link: "/activities#kayaking"
     }
   ];

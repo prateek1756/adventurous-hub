@@ -16,32 +16,32 @@ import TiltCard from './TiltCard';
 const galleryImages = [
   {
     id: 1,
-    src: "/lovable-uploads/44997248-2a7d-4c4b-8656-13d704d35b37.png",
+    src: "/img-upload/44997248-2a7d-4c4b-8656-13d704d35b37.png",
     alt: "Riverside Cottages",
   },
   {
     id: 2,
-    src: "/lovable-uploads/a9ae304d-ac8b-4671-94c1-c3a3013a0711.png",
+    src: "/img-upload/a9ae304d-ac8b-4671-94c1-c3a3013a0711.png",
     alt: "Scenic Mountain View",
   },
   {
     id: 3,
-    src: "/lovable-uploads/b4c6f3a5-3500-43ad-97e1-e69041317e64.png",
+    src: "/img-upload/b4c6f3a5-3500-43ad-97e1-e69041317e64.png",
     alt: "River Rafting Adventure",
   },
   {
     id: 4,
-    src: "/lovable-uploads/39f35db-5cf1-4a0b-be13-c4f3947bec67.png", 
+    src: "/img-upload/39f35db-5cf1-4a0b-be13-c4f3947bec67.png", 
     alt: "Forest Meditation",
   },
   {
     id: 5,
-    src: "/lovable-uploads/fa6d6df3-ea4b-4f3f-9db1-81fbb2370f9f.png", 
+    src: "/img-upload/fa6d6df3-ea4b-4f3f-9db1-81fbb2370f9f.png", 
     alt: "Luxury Accommodation",
   },
   {
     id: 6, 
-    src: "/lovable-uploads/f97f4d91-56e4-4e2f-bb73-93760030da48.png",
+    src: "/img-upload/f97f4d91-56e4-4e2f-bb73-93760030da48.png",
     alt: "Wildlife Safari"
   }
 ];

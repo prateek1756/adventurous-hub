@@ -11,28 +11,28 @@ const attractions = [
     name: "Syntheri Rock",
     description: "A monolithic rock structure carved by the Kaneri river, located in the heart of the Western Ghats.",
     distance: "15 km",
-    image: "/lovable-uploads/ea6ebcc8-61ac-4f00-853a-b08d19197ba7.png"
+    image: "/img-upload/ea6ebcc8-61ac-4f00-853a-b08d19197ba7.png"
   },
   {
     id: 2,
     name: "Kavala Caves",
     description: "Ancient limestone caves with spectacular stalactites and stalagmites formations.",
     distance: "25 km",
-    image: "/lovable-uploads/45ac4715-903c-4b9d-aaf3-c8fbe391b9a7.png"
+    image: "/img-upload/45ac4715-903c-4b9d-aaf3-c8fbe391b9a7.png"
   },
   {
     id: 3,
     name: "Ulavi Temple",
     description: "An ancient shrine dedicated to Chandika Devi, nestled amidst serene natural beauty.",
     distance: "30 km",
-    image: "/lovable-uploads/2de354f0-c211-44f9-8243-b1cce525c7a7.png"
+    image: "/img-upload/2de354f0-c211-44f9-8243-b1cce525c7a7.png"
   },
   {
     id: 4,
     name: "Supa Dam",
     description: "One of the major dams built across the Kali River, offering panoramic views of the Western Ghats.",
     distance: "20 km",
-    image: "/lovable-uploads/d3b0e6e8-2ca3-404f-be2d-c15f09cbabbb.png"
+    image: "/img-upload/d3b0e6e8-2ca3-404f-be2d-c15f09cbabbb.png"
   }
 ];
 

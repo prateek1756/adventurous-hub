@@ -43,9 +43,9 @@ const Index: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <div className="relative">
-                <img src="/lovable-uploads/f97f4d91-56e4-4e2f-bb73-93760030da48.png" alt="Dandeli Wildlife" className="w-full h-[500px] object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                <img src="/img-upload/f97f4d91-56e4-4e2f-bb73-93760030da48.png" alt="Dandeli Wildlife" className="w-full h-[500px] object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" />
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl hidden md:block hover:shadow-2xl transform hover:scale-110 transition-all duration-300">
-                  <img src="/lovable-uploads/8fe5892b-b9ce-440c-8423-786ee90235e7.png" alt="Rafting in Dandeli" className="w-40 h-32 object-cover rounded-md" />
+                  <img src="/img-upload/8fe5892b-b9ce-440c-8423-786ee90235e7.png" alt="Rafting in Dandeli" className="w-40 h-32 object-cover rounded-md" />
                 </div>
               </div>
             </div>
@@ -129,19 +129,19 @@ const Index: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[{
                 title: "Riverside Cottages",
-                image: "/lovable-uploads/44997248-2a7d-4c4b-8656-13d704d35b37.png",
+                image: "/img-upload/44997248-2a7d-4c4b-8656-13d704d35b37.png",
                 description: "Wake up to the soothing sounds of the river",
                 price: "₹2,499",
                 delay: 0
               }, {
                 title: "Treehouse Villas",
-                image: "/lovable-uploads/e254561c-a576-4abe-ba9b-a057e1ddc8d7.png",
+                image: "/img-upload/e254561c-a576-4abe-ba9b-a057e1ddc8d7.png",
                 description: "Elevated living with panoramic forest views",
                 price: "₹3,999",
                 delay: 200
               }, {
                 title: "Luxury Tents",
-                image: "/lovable-uploads/507d9972-fed7-467f-90af-7506080a19b4.png",
+                image: "/img-upload/507d9972-fed7-467f-90af-7506080a19b4.png",
                 description: "Glamping experience with all modern amenities",
                 price: "₹1,999",
                 delay: 400
@@ -204,7 +204,7 @@ const Index: React.FC = () => {
                 name: "Stanley Nuthalpati",
                 location: "New York, USA",
                 quote: "The river rafting experience was exhilarating! The staff was incredibly knowledgeable and made us feel safe while still having a blast.",
-                image: "/lovable-uploads/b2944dcd-84a0-4ab8-af63-861cd91c2d08.png",
+                image: "/img-upload/b2944dcd-84a0-4ab8-af63-861cd91c2d08.png",
                 delay: 0
               },
               {
@@ -218,7 +218,7 @@ const Index: React.FC = () => {
                 name: "Rajat Hegde",
                 location: "Singapore",
                 quote: "The wildlife safari was the highlight of our trip. We spotted elephants, deer, and even a black panther! Our guide was exceptional in tracking the animals.",
-                image: "/lovable-uploads/54f9733a-3115-43f8-8702-ac90313ce5aa.png",
+                image: "/img-upload/54f9733a-3115-43f8-8702-ac90313ce5aa.png",
                 delay: 400
               }
             ].map((testimonial, index) => (
@@ -281,7 +281,7 @@ const Index: React.FC = () => {
         
         {/* CTA */}
         <section className="py-20 bg-green-700 text-white relative">
-          <div className="absolute inset-0 bg-[url('/lovable-uploads/039f35db-5cf1-4a0b-be13-c4f3947bec67.png')] bg-cover bg-center opacity-20"></div>
+          <div className="absolute inset-0 bg-[url('/img-upload/039f35db-5cf1-4a0b-be13-c4f3947bec67.png')] bg-cover bg-center opacity-20"></div>
           <div className="container relative z-10 px-4 text-center">
             <div className="max-w-3xl mx-auto animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-glow">
