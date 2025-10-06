@@ -3,6 +3,11 @@
 Adventurous Hub is a comprehensive web application designed to provide users with an immersive experience for exploring and booking adventure tourism and resort accommodations in the Dandeli region.<create_file>
 <path>README.md</path>
 <content>
+# Adventurous Hub
+
+Adventurous Hub is a comprehensive web application designed to provide users with an immersive experience for exploring and booking adventure tourism and resort accommodations in the Dandeli region.<create_file>
+<path>README.md</path>
+<content>
 # 🌟 Adventurous Hub
 
 > A premium adventure tourism and resort booking platform for Dandeli, Karnataka
@@ -11,6 +16,8 @@ Adventurous Hub is a comprehensive web application designed to provide users wit
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue.svg)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.0-blue.svg)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.12.16-purple.svg)](https://www.framer.com/motion/)
+
+Visit the live website here: [https://adventurous-hub.vercel.app/](https://adventurous-hub.vercel.app/)
 
 Adventurous Hub is a modern, responsive web application that showcases the breathtaking beauty of Dandeli Wildlife Sanctuary and surrounding areas. Built with cutting-edge technologies, it provides an immersive experience for adventure enthusiasts looking to book accommodations, activities, and explore nearby attractions.
 
