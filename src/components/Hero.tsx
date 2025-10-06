@@ -28,7 +28,7 @@ const slides: SlideData[] = [
     id: 3,
     imageSrc: '/img-upload/968e9c7f-6872-4c43-ad59-1dd92c92d29a.png',
     title: 'Jungle Trekking Adventures',
-    subtitle: 'Explore the dense forests and hills of Dandeli on guided trek experiences'
+    subtitle: 'Explore the dense forests and hills of Resort on guided trek experiences'
   },
   {
     id: 4,
