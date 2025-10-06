@@ -307,7 +307,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Email**: prateekchand175@gmail.com
 - **Phone**: +91 7042110866
-- **Address**: Dandeli Wildlife Sanctuary, Karnataka, India - 581325
 
 ---
 
