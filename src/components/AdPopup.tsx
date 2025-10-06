@@ -73,7 +73,7 @@ export function AdPopup() {
                 Day Package at Just ₹799!
               </h3>
               <p className="text-muted-foreground">
-                Experience the best of Dandeli at an unbeatable price
+                Experience the best of Resorts at an unbeatable price
               </p>
             </motion.div>
 
