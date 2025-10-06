@@ -23,7 +23,7 @@ const Index: React.FC = () => {
         {/* Call Now Button - repositioned above chatbot with more space */}
         <div className="fixed bottom-32 right-4 z-40 md:bottom-24">
           <a 
-            href="tel:+918277385225" 
+            href="tel:+91704211XXXX" 
             className="flex items-center gap-2 bg-green-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 hover:scale-110 animate-bounce"
           >
             <Phone size={20} />

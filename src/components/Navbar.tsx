@@ -56,9 +56,9 @@ const Navbar: React.FC = () => {
         </nav>
         
         <div className="hidden md:flex items-center space-x-4">
-          <a href="tel:+918904704234" className="flex items-center gap-1 text-foreground/80 hover:text-foreground transition-colors duration-300">
+          <a href="tel:+91704211XXXX" className="flex items-center gap-1 text-foreground/80 hover:text-foreground transition-colors duration-300">
             <Phone size={16} />
-            <span>+91 8277385225</span>
+            <span>+91 704211XXXX</span>
           </a>
           <button className="p-2 rounded-full text-foreground/70 hover:text-foreground transition-colors duration-300" onClick={() => setIsSearchOpen(true)}>
             <Search size={20} />

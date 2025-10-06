@@ -77,8 +77,8 @@ const Footer: React.FC = () => {
                 <li className="flex items-center space-x-3">
                   <Phone size={20} className="flex-shrink-0" />
                   <div className="flex flex-col">
-                    <a href="https://wa.me/918277385225?text=Hi!%20I'm%20interested%20in%20booking%20an%20adventure%20at%20Dandeli." target="_blank" rel="noopener noreferrer" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors duration-300">
-                      +91 8277385225
+                    <a href="https://wa.me/91704211XXXX?text=Hi!%20I'm%20interested%20in%20booking%20an%20adventure%20at%20Dandeli." target="_blank" rel="noopener noreferrer" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors duration-300">
+                      +91 704211XXXX
                     </a>
                     <a href="tel:+917795601255" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors duration-300">
                       +91 7795601255
