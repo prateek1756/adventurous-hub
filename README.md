@@ -1,9 +1,5 @@
 # Welcome to my Project Adventurous Hub
 
-Adventurous Hub is a comprehensive web application designed to provide users with an immersive experience for exploring and booking adventure tourism and resort accommodations in the Dandeli region.<create_file>
-<path>README.md</path>
-<content>
-# Adventurous Hub
 
 Adventurous Hub is a comprehensive web application designed to provide users with an immersive experience for exploring and booking adventure tourism and resort accommodations in the Dandeli region.<create_file>
 <path>README.md</path>
