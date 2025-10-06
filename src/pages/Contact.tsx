@@ -88,8 +88,8 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <h3 className="font-medium">Phone</h3>
-                        <a href="tel:+918904704234" className="text-green-700 hover:underline">
-                          +91 8904704234
+                        <a href="tel:+917042110XXX" className="text-green-700 hover:underline">
+                          +91 7042110XXX
                         </a>
                       </div>
                     </div>
@@ -100,8 +100,8 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <h3 className="font-medium">Email</h3>
-                        <a href="mailto:dandeliadventures.in@gmail.com" className="text-green-700 hover:underline">
-                          dandeliadventures.in@gmail.com
+                        <a href="mailto: prateekchand1756@gmail.com" className="text-green-700 hover:underline">
+                          prateekchand1756@gmail.com
                         </a>
                       </div>
                     </div>
