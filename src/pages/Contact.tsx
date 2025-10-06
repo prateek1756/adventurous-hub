@@ -4,12 +4,30 @@ import Footer from '@/components/Footer';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { ContactFormSchema, type ContactFormData } from '@/utils/validation-schemas';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
 
 const ContactPage = () => {
   const { toast } = useToast();
+  
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(ContactFormSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    },
+  });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = (data: ContactFormData) => {
+    // Security: Data is already validated by Zod schema
+    console.log('[Contact Form] Validated submission received');
     
     toast({
       title: "Message Sent",
@@ -17,7 +35,7 @@ const ContactPage = () => {
       duration: 5000,
     });
     
-    (e.target as HTMLFormElement).reset();
+    form.reset();
   };
 
   return (
@@ -122,71 +140,75 @@ const ContactPage = () => {
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h2 className="text-2xl font-display font-semibold mb-6">Send Us a Message</h2>
                   
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label htmlFor="name" className="block text-sm font-medium">
-                          Your Name
-                        </label>
-                        <input
-                          type="text"
+                        <Label htmlFor="name">Your Name</Label>
+                        <Input
                           id="name"
-                          name="name"
-                          required
-                          className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
+                          {...form.register('name')}
+                          placeholder="Enter your name"
+                          className={form.formState.errors.name ? 'border-destructive' : ''}
                         />
+                        {form.formState.errors.name && (
+                          <p className="text-sm text-destructive">{form.formState.errors.name.message}</p>
+                        )}
                       </div>
                       
                       <div className="space-y-2">
-                        <label htmlFor="email" className="block text-sm font-medium">
-                          Email Address
-                        </label>
-                        <input
-                          type="email"
+                        <Label htmlFor="email">Email Address</Label>
+                        <Input
                           id="email"
-                          name="email"
-                          required
-                          className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
+                          type="email"
+                          {...form.register('email')}
+                          placeholder="Enter your email"
+                          className={form.formState.errors.email ? 'border-destructive' : ''}
                         />
+                        {form.formState.errors.email && (
+                          <p className="text-sm text-destructive">{form.formState.errors.email.message}</p>
+                        )}
                       </div>
                     </div>
                     
                     <div className="space-y-2">
-                      <label htmlFor="phone" className="block text-sm font-medium">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
+                      <Label htmlFor="phone">Phone Number (Optional)</Label>
+                      <Input
                         id="phone"
-                        name="phone"
-                        className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
+                        type="tel"
+                        {...form.register('phone')}
+                        placeholder="Enter your phone number"
+                        className={form.formState.errors.phone ? 'border-destructive' : ''}
                       />
+                      {form.formState.errors.phone && (
+                        <p className="text-sm text-destructive">{form.formState.errors.phone.message}</p>
+                      )}
                     </div>
                     
                     <div className="space-y-2">
-                      <label htmlFor="subject" className="block text-sm font-medium">
-                        Subject
-                      </label>
-                      <input
-                        type="text"
+                      <Label htmlFor="subject">Subject</Label>
+                      <Input
                         id="subject"
-                        name="subject"
-                        required
-                        className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
+                        {...form.register('subject')}
+                        placeholder="Enter subject"
+                        className={form.formState.errors.subject ? 'border-destructive' : ''}
                       />
+                      {form.formState.errors.subject && (
+                        <p className="text-sm text-destructive">{form.formState.errors.subject.message}</p>
+                      )}
                     </div>
                     
                     <div className="space-y-2">
-                      <label htmlFor="message" className="block text-sm font-medium">
-                        Your Message
-                      </label>
-                      <textarea
+                      <Label htmlFor="message">Your Message</Label>
+                      <Textarea
                         id="message"
-                        name="message"
+                        {...form.register('message')}
                         rows={5}
-                        required
-                        className="w-full p-3 border border-input rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
-                      ></textarea>
+                        placeholder="Enter your message"
+                        className={form.formState.errors.message ? 'border-destructive' : ''}
+                      />
+                      {form.formState.errors.message && (
+                        <p className="text-sm text-destructive">{form.formState.errors.message.message}</p>
+                      )}
                     </div>
                     
                     <Button

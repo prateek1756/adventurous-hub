@@ -6,7 +6,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/hooks/use-toast";
 import { sendBookingConfirmations } from "@/utils/email-service";
-import { BookingFormData, FormSchema } from "./booking/types";
+import { BookingFormData } from "./booking/types";
+import { BookingFormSchema } from "@/utils/validation-schemas";
 import { PersonalInfoFields } from "./booking/PersonalInfoFields";
 import { GuestCountFields } from "./booking/GuestCountFields";
 import { DateFields } from "./booking/DateFields";
@@ -26,7 +27,7 @@ export function BookingForm({ onSubmit }: BookingFormProps) {
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const form = useForm<BookingFormData>({
-    resolver: zodResolver(FormSchema),
+    resolver: zodResolver(BookingFormSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -55,7 +56,10 @@ export function BookingForm({ onSubmit }: BookingFormProps) {
       form.reset();
       onSubmit(values);
     } catch (error) {
-      console.error('Booking error:', error);
+      // Log error without exposing sensitive data
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
+      console.error('[Booking Error]:', errorMessage);
+      
       toast({
         title: "Error",
         description: "There was a problem processing your booking. Please try again.",

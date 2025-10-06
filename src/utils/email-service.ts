@@ -21,10 +21,8 @@ interface SMSData {
  */
 export const sendEmail = async (data: EmailData): Promise<boolean> => {
   try {
-    // For demo purposes, we'll log the email content
-    console.log('Sending email to:', data.to);
-    console.log('Subject:', data.subject);
-    console.log('Body:', data.body);
+    // Security: Log only metadata, not email content or recipient details
+    console.log('[Email Service] Sending email with subject:', data.subject);
     
     // In a real implementation, you would send to dandeliadventure.info@gmail.com
     // Example with updated email:
@@ -63,9 +61,8 @@ export const sendEmail = async (data: EmailData): Promise<boolean> => {
  */
 export const sendSMS = async (data: SMSData): Promise<boolean> => {
   try {
-    // In this demo, we'll log the SMS content to console
-    console.log('Sending SMS to:', data.to);
-    console.log('Message:', data.message);
+    // Security: Log only that SMS is being sent, not phone number or message content
+    console.log('[SMS Service] Sending SMS notification');
     
     // In a real implementation, you would connect to an SMS API service like Twilio, MSG91, etc.
     // Example (commented out as we don't have actual credentials):

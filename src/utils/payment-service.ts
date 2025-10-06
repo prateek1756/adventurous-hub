@@ -32,7 +32,8 @@ const API_ENDPOINTS = {
  */
 export const processPayment = async (details: PaymentDetails): Promise<{success: boolean; transactionId?: string; error?: string}> => {
   try {
-    console.log('Processing payment:', details);
+    // Security: Log only transaction metadata, not sensitive payment details
+    console.log('[Payment Processing] Method:', details.paymentMethod, 'Amount:', details.amount);
     
     // In production, this would be a real API call to a payment processor
     // For demo, we're simulating the API call
@@ -111,7 +112,10 @@ export const processPayment = async (details: PaymentDetails): Promise<{success:
       transactionId
     };
   } catch (error) {
-    console.error('Payment processing error:', error);
+    // Security: Log error without exposing sensitive payment details
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error('[Payment Error]:', errorMessage);
+    
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Payment processing failed. Please try again.'

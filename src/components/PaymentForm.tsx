@@ -157,7 +157,10 @@ export function PaymentForm({ bookingDetails, onPaymentSuccess, onCancel }: Paym
         throw new Error(paymentResult.error || 'Payment failed');
       }
     } catch (error) {
-      console.error('Payment error:', error);
+      // Security: Log error without exposing sensitive payment details
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      console.error('[Payment Error]:', errorMessage);
+      
       toast({
         title: "Payment failed",
         description: error instanceof Error ? error.message : "Please try again or use a different payment method",
@@ -193,7 +196,8 @@ export function PaymentForm({ bookingDetails, onPaymentSuccess, onCancel }: Paym
     try {
       return date.toLocaleDateString();
     } catch (error) {
-      console.error('Date formatting error:', error);
+      // Security: Log error type only, not date value
+      console.error('[Date Formatting Error]');
       return 'Invalid date';
     }
   };
