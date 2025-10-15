@@ -306,7 +306,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - **Email**: prateekchand1756@gmail.com
-- **Phone**: +91 7042110866
+- **Phone**: +91 7042110863
 
 ---
 
